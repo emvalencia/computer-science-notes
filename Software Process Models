@@ -1,6 +1,6 @@
 Software Process Model Notes
 Models:
-I.    Build-and-Fix 
+I.    Build-and-Fix
 II.   Waterfall
 III.  Rapid Prototyping
 IV.   Incremental 
@@ -24,22 +24,64 @@ Processes:
   - Relationships between elements: precedence, requires this or that, provides this or that...  
   - Constraints: time, cost, qualities 
  
-Models
+Models:
  - A model is a simplified representation of something 
  - Prescriptive models enforce rules
  - Descriptive models describe or characterize
+ 
+Software Risks (per Boehm): risk/management techniques
+  - Personnel shortfalls -> get staff with top talent, job matching, morale building
+  - Unrealistic schedules and budgets -> detailed cost/schedule estimation, reuse, incremental development
+  - Developing the wrong software functions -> user surverys, prototyping
+  - Continuing stream of software changes -> information hiding, incremental development
+  - Shortfalls in externally furnished components -> compatibility analysis
+  - Shortfalls in externally performed tasks -> reference checking, competitive design or prototyping 
   
 I. Build-and-Fix 
    - Steps: build 1st version, modify until client is satisfied (repeat), operations mode (maintenance with prior step), 
-     retirement
+      retirement
    - Strengths: good for small programs that don't require much maintenance or many devs
    - Weaknesses: not rigorous enough for larger projects 
 
 II. Waterfall
    - Steps: requirements phase -> design phase -> implementation phase -> integration phase -> testing phase -> 
-      operations mode (repeat prior steps but the 1st) -> retirement 
+      operations mode (repeat prior steps but the 1st for maintenance) -> retirement 
+   - Strengths: promotes understanding of requirements, disciplined/rigorous/formal, lots of documentation, easy to track
+      progress, good for shorter, simpler projects with well-understood requirements, provided a starting point for other 
+      software process models 
+   - Weaknesses: rigid/hard to change, limited user input, bad for long-term projects with ambiguity in requirements
+
+III. Rapid Prototyping 
+   - Steps: build and discard simple prototype -> design phase -> implementation phase -> integration phase -> testing 
+      phase -> operations mode (repeat prior steps but the 1st for maintenance) -> retirement 
+      ***Notice that the only difference between this and the Waterall Process is the "build and discard simple prototype"
+   - Strengths: reduced time and costs, improved and increased user involvement (1) 
+   - Weaknesses: insufficient analysis, user confusion of prototype and finished system, developer misunderstanding of user
+      objectives, developer attachment to prototype, excessive development time of the prototype, expense of implementing 
+      prototype (1)
+      
+IV. Incremental 
+    - Steps: requirements phase (then verify) -> architectural design (then verify) -> for each increment: perform detailed
+      design, implementation, and integration, test, deliver to client -> operations mode (maintenance of prior steps) ->
+      retirement  
+      
+V. Spiral 
+    - Steps: risk analysis (RA) -> rapid prototype -> verify (V) -> RA -> design -> V -> RA -> implementation -> V 
+    - Strengths: good for new projects with uncertain, complex requirements
+    - Weaknesses: developers have to be competent at risk analysis
+    
+VI. Rational Unified Process 
+    - A use-case driven model that is architecture centric and iterative/incremental
+    - Iterate through phases: inception, elaboration, construction, and transition 
+    - Consists of workflows:
+      1. Process: business modeling, requirements, analysis and design, implementation, test, deployment
+      2. Configuration management, management, environment 
+    - Workflows grup activities logically
+    - In an iteration you walk through all workflows
+    
   
   
   
  
-@copy: All notes are property of Professor Ziv and Navarro at UCI
+@copy: Most notes are property of Professor Ziv and Navarro at UCI
+1. https://www.iotap.com/blog/entryid/124/advantages-disadvantage-of-prototyping-process-model
