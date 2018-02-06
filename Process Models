@@ -1,8 +1,14 @@
 Software Process Model Notes
 Models:
-I.    Waterfall
-II.   Rapid Prototyping
-III.  Spiral 
+I.    Build-and-Fix 
+II.   Waterfall
+III.  Rapid Prototyping
+IV.   Incremental 
+V.    Spiral
+VI.   Rational Unified Process (RUP)
+VII.  Open Source Software (OSS)
+VIII. Extreme Programming (XP)
+IX.   Agile 
 
 Remember: The 3 essential ingredients of software engineering are:
   1) People
