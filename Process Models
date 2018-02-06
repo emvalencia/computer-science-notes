@@ -1,0 +1,27 @@
+Software Process Model Notes
+Models:
+I.    Waterfall
+II.   Rapid Prototyping
+III.  Spiral 
+
+Remember: The 3 essential ingredients of software engineering are:
+  1) People
+  2) Processes
+  3) Tools 
+  
+ Difficulties of software engineering (SE):
+  - Essential qualities: complexity, conformity, changeability, intangibility 
+  - Those essential qualities can lead to drastic/disasterous consequences 
+  
+ Processes: 
+  - Elements: phases, products, roles, resources
+  - Relationships between elements: precedence, requires this or that, provides this or that...  
+  - Constraints: time, cost, qualities 
+ 
+ Models
+ - A model is a simplified representation of something 
+ - Prescriptive models enforce rules
+ - Descriptive models describe or characterize
+  
+  I. Build-and-Fix 
+ 
