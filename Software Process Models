@@ -1,4 +1,5 @@
-Software Process Model Notes
+Software Process Models
+-------------------------
 Models:
 I.    Build-and-Fix
 II.   Waterfall
@@ -70,7 +71,7 @@ V. Spiral
     - Strengths: good for new projects with uncertain, complex requirements
     - Weaknesses: developers have to be competent at risk analysis
     
-VI. Rational Unified Process 
+VI. Rational Unified Process (RUP)
     - A use-case driven model that is architecture centric and iterative/incremental
     - Iterate through phases: inception, elaboration, construction, and transition 
     - Consists of workflows:
@@ -78,8 +79,37 @@ VI. Rational Unified Process
       2. Configuration management, management, environment 
     - Workflows grup activities logically
     - In an iteration you walk through all workflows
+    - Strengths: risk-driven/incremental, lots of tool support/guidance
+    - Weaknesses: complicated (need a process expert)
+
+VII.1 Open-Source Software (OSS): Classic Version 
+    - Source code is freely available and re-distributable 
+    - Philosophy: "This is a way to optimize the usage of the work, the value of humanity as a whole gets from it. At 
+      the cost, of course, of the ability of the producer to capture value." - Marijn Haverbeke 
+    - Strengths: many contributors working in a distributed manner (also volunteers), scales well 
+    - Weaknesses: heavy reliance on software tools (web, email, version control, repositories...)
+    - Two phases:
+      1. Develop initial version- usually 1 or small # of developers
+      2. Maintain (evolve)- corrective maintenance, perfective maintenance, adaptive maintenance
+    - Ex. Linux, Firefox, MySQL, Eclipse, Apache, gcc compiler...
+
+VII.2 Open-Source: The Corporate Version
+    - Pros: saves money, avoids "lock-in", provides "business agility"
+    - Companies sponsor open source projects: provide funding, developer resources, infrastructure, management
+    - Ex. Android, Alliance for Open Media (Microsoft, Google, Cisco, Intel, Amazon, Netflix, Mozilla) 
+    - Strengths: accessibility, huge user base, novel features, higher quality code, great minds motivated and working
+      together to solve problems leads to advancements
+    - Weaknesses: not appropriate for proprietary software, software with strict requirements and/or tight deadlines, 
+      technical support/maintenance can by iffy, developers are often not compensated financially 
+ 
+VIII. Extreme Programming (XP) 
+    - Practices and principles: whole team, planning game, small releases, customer tests, simple design, pair
+      programming, test-driven development, design improvement, continuous integration, collective code ownership, 
+      coding standards, metaphor, sustainable pace/developer welfare, open space, shared understanding, praid and fine
+      feedback, continuous process
+    - Steps: determine desired features, implement/deliver each task, follow values and principles
     
-  
+IX: Agile 
   
   
  
