@@ -1,4 +1,4 @@
 # Software-Engineering-Principles
-Collection of software engineering notes from IN4MATX 43 at UCI
+Collection of software engineering notes from UCI's IN4MATX 43
 
 1. Software Process Models
