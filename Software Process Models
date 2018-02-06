@@ -15,19 +15,31 @@ Remember: The 3 essential ingredients of software engineering are:
   2) Processes
   3) Tools 
   
- Difficulties of software engineering (SE):
+Difficulties of software engineering (SE):
   - Essential qualities: complexity, conformity, changeability, intangibility 
   - Those essential qualities can lead to drastic/disasterous consequences 
   
- Processes: 
+Processes: 
   - Elements: phases, products, roles, resources
   - Relationships between elements: precedence, requires this or that, provides this or that...  
   - Constraints: time, cost, qualities 
  
- Models
+Models
  - A model is a simplified representation of something 
  - Prescriptive models enforce rules
  - Descriptive models describe or characterize
   
-  I. Build-and-Fix 
+I. Build-and-Fix 
+   - Steps: build 1st version, modify until client is satisfied (repeat), operations mode (maintenance with prior step), 
+     retirement
+   - Strengths: good for small programs that don't require much maintenance or many devs
+   - Weaknesses: not rigorous enough for larger projects 
+
+II. Waterfall
+   - Steps: requirements phase -> design phase -> implementation phase -> integration phase -> testing phase -> 
+      operations mode (repeat prior steps but the 1st) -> retirement 
+  
+  
+  
  
+@copy: All notes are property of Professor Ziv and Navarro at UCI
