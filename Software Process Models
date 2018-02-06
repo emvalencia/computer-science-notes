@@ -110,8 +110,17 @@ VIII. Extreme Programming (XP)
     - Steps: determine desired features, implement/deliver each task, follow values and principles
     
 IX: Agile 
+    - Includes and evolved from prior processes
+    - The Agile Manifesto: "We have come to value... " individuals and interactions over processes and tools, working 
+      software over comprehensive documentation, customer collaboration over contract negotiation, responding to change
+      over following a plan 
+    - Principles: welcome change in requirements, business people and developers work together daily throughout the
+      project, build projects around motivated individuals, face-to-face conversation is the best way to convey info, 
+      documentation is just a means to an end, continuous delivery 
+    - Strengths: customer satisfaction, adaptable to changing circumstances, good for projects with unclear, changing
+      requirements, good for small teams
+    - Weaknesses: lack of documentation, unstable requirements, bad for projects where customers aren't involved 
   
   
- 
 @copy: Most notes are property of Professor Ziv and Navarro at UCI
 1. https://www.iotap.com/blog/entryid/124/advantages-disadvantage-of-prototyping-process-model
