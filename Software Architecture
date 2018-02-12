@@ -47,30 +47,30 @@ I. Object-oriented style
    - Ex. Business applications, ship radar system 
     
 II. Model-view-controllers
-    - Model is the system, view is what the actors can see, controllers are what the actor controls that 
-      communicates with the model
-    - Strengths: modularity, anticipation of change
-    - Ex. Web applications, atm machine 
+   - Model is the system, view is what the actors can see, controllers are what the actor controls that 
+     communicates with the model
+   - Strengths: modularity, anticipation of change
+   - Ex. Web applications, atm machine 
     
 III. Client-server 
-    - Multiple clients are connected to a single server, can have multiple servers 
-    - Strengths: centralized control
-    - Weakness: if one server goes down, none of the clients get info
-    - Ex. Games, email 
+   - Multiple clients are connected to a single server, can have multiple servers 
+   - Strengths: centralized control
+   - Weakness: if one server goes down, none of the clients get info
+   - Ex. Games, email 
     
 IV. Layered
-    - Multiple layers and modular
-    - Strengths: modularity, abstraction, anticipation of change 
-    - Ex. Operating systems
+   - Multiple layers and modular
+   - Strengths: modularity, abstraction, anticipation of change 
+   - Ex. Operating systems
     
 V. Peer-to-peer
-    - No server involved
-    - Strengths: efficiency, robustness
-    - Ex. File-sharing 
+   - No server involved
+   - Strengths: efficiency, robustness
+   - Ex. File-sharing 
     
 VI. Pipe-and-filter
-    - Strengths: efficiency, scalability
-    - Ex. Stock market, news 
+   - Strengths: efficiency, scalability
+   - Ex. Stock market, news 
 
 
 @copy: Most notes are property of Professor Ziv and Navarro at UCI
