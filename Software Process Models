@@ -39,7 +39,7 @@ Software Risks (per Boehm): risk/management techniques
   - Shortfalls in externally performed tasks -> reference checking, competitive design or prototyping 
   
 I. Build-and-Fix 
-   - Steps: build 1st version, modify until client is satisfied (repeat), operations mode (maintenance with prior step), 
+   - Steps: build 1st version -> modify until client is satisfied (repeat) -> operations mode (maintenance with prior step), 
       retirement
    - Strengths: good for small programs that don't require much maintenance or many devs
    - Weaknesses: not rigorous enough for larger projects 
@@ -67,7 +67,8 @@ IV. Incremental
       retirement  
       
 V. Spiral 
-    - Steps: risk analysis (RA) -> rapid prototype -> verify (V) -> RA -> design -> V -> RA -> implementation -> V 
+    - Steps: risk analysis (RA) -> rapid prototype -> verify (V) -> RA -> specification -> V -> RA -> design -> V -> RA -> 
+      implementation -> V 
     - Strengths: good for new projects with uncertain, complex requirements
     - Weaknesses: developers have to be competent at risk analysis
     
@@ -111,9 +112,11 @@ VIII. Extreme Programming (XP)
     
 IX: Agile 
     - Includes and evolved from prior processes
-    - The Agile Manifesto: "We have come to value... " individuals and interactions over processes and tools, working 
-      software over comprehensive documentation, customer collaboration over contract negotiation, responding to change
-      over following a plan 
+    - The Agile Manifesto: "We have come to value... " 
+        o Individuals and interactions over processes and tools
+        o Working software over comprehensive documentation
+        o Customer collaboration over contract negotiation
+        o Responding to change over following a plan 
     - Principles: welcome change in requirements, business people and developers work together daily throughout the
       project, build projects around motivated individuals, face-to-face conversation is the best way to convey info, 
       documentation is just a means to an end, continuous delivery 
