@@ -84,9 +84,22 @@ V. Black-box Testing
                o Check: one minima in the list, a few minima, all are minima 
                o Does changing the number of each value affect the code's output?
             - Magnitude of numbers: [0, 4, 15, 5, 33], [100, 67], [47, 43, 24, 58, 60], ...
-               o Does the magnitude of numbers (how much they vary) affect the code's output?
-            
+               o 
+               o Does the magnitude of numbers (how much they vary) affect the code's output?   
          o Remember! Trying to find bugs, trap the software
+    - When doing systematic testing, can visualize it using a simple graph
+        o Title: the basis you are testing
+        o Split into sections: test cases (input), subdomains, expected output, actual output
+                              Length of List (for quizAverage example)
+          Test Case            Subdomains           Expected Output    Actual Output
+                         Empty One Small Large      
+          -------------------------------------------------------------------------------------
+              ()           x                           0.0                9.9999!       #ERROR
+              (87)               x                     87.0               crashes       #ERROR
+              (90,95,85)             x                 92.5               92.5          #Passes
+              (80,81,82,
+               83,84,85,
+               86,87,99)                    x          86.0               86.0          #Passes
             
   
 VI. White-box Testing 
