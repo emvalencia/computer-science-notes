@@ -1,0 +1,96 @@
+Human-Computer Interaction and User-Centered Design (HCI/UCD)
+---------------------------------------------------------------
+I.    Basics
+II.   User-Centered Design Methods
+III.  Heuristic Evaluation
+IV.   User Testing
+
+I. Basics
+    - Why focus on human-computer interactions and user-centered design?
+       o Sales double, performance doubles, traffic count increase
+       o Usability is important for attracting/maintaining customers
+       o Improves the usability of outward facing-sites and internally-used software
+          - 5.4M/year productivity savings, as per Nielson 2008
+       o Simple and inexpensive
+       o Leads to higher sales and satisfaction 
+       o "If it doesnt work for people, it doesn't work!" - no one will want to use it/failure
+    - Usability fails
+       o Difficult for the user to do something
+       o Difficult for the user to understand something
+       o Inconvenient for the user
+       o Bad first impression of the software
+    - Why usability is difficult:
+       o Usability is based on psychology, cognitive science, aesthetics, art
+       o "Focus on the user, and all else will follow." - Google
+         
+II. User-Centered Design Methods
+     1. Interviews and observations of end users
+         o Interview people and watch their interations with the software empirically
+         o Live user testing
+     2. Personas
+         o User-archetype, a fictional representation of target users you can use to help guide decisions about a product, 
+           features, navigation, visual design, ... 
+         o Used during design and user testing
+         o Ex. Dr. Lee is a resident physician that has to send patient reports to her attending physician. Dr. Cardinal is
+           the attending physician that wants the reports. Dr. Lee's current method of charting: visit patient, record 
+           information, sit down and do more charting (which takes more time), reports take longer to get to attending. 
+           With the new method, she will: visit patient, record information easier, be able to relax and put in 
+           information, give patient records to her attending in time. 
+     3. Scenarios
+         o A particular a scenario that personas play out
+         o Can represent the old method and new, improved method 
+     4. Storyboards
+     5. Swimming lane diagrams
+     6. Site map
+     7. Wireframes and mockups
+     8. Design guidelines
+     9. Heuristic evaluation
+     10. User testing 
+     
+III. Heuristic Evaluation
+    - Developed by Jakob Neilsen
+    - Helps finds usability problems in software design
+    - Determined that it is cost-effective, severe problems are found more often, productivity increases, more evaluators means
+      more problems being found
+    - 10 principles of heuristic evalution:
+       1. Visibility of system status
+           o System must communicate clearly with the user
+           o The user needs to know what is going on with the system, ex. loading screen
+       2. Match system words to the real world 
+           o The system should speak the user's language with words/pictures that are familiar to them
+           o Ex. Folders on a computer look like folders irl
+       3. User control and freedom
+           o Users often make mistakes and need to be able to get back to where they were
+           o Ex. Allow user to move back to the page they were on before, refresh the page, go forward
+       3. Consistency and standards
+           o Follow standard conventions when designing 
+           o System has continuity across its platform
+           o Ex. The call button on a phone looks like a phone, a magnifying glass icon usually means to search, an envelope
+             icon usually refers to mail 
+       4. Error prevention
+           o Best designs have great error recovery and prevent users from making errors in the first place
+           o Systems must have efficient methods of error prevention 
+           o Ex. Car system lights warn you about something that might go wrong/that you need to get your car checked out
+       5. Recognition rather than recall 
+           o Systems should minimize user's memory load by making things more visible and recognizable
+           o Ex. When choosing a font, the font is usually displayed so that you don't have to remember what it looks like
+       6. Accelerators
+           o Unseen to novice user but allows expert user to navigate more quickly/conveniently
+           o Shortcuts 
+           o Ex. Photoshop has icons on the left-hand side for novice users and has keyboard shortcuts for expert users
+       7. Minimalist design
+           o Consider contrast, repetition, alignment, and proximity 
+           o System must be aesthetically pleasing and efficienty composed
+       8. Help Users recognize/recover from errors
+           o Error messages should be expressed in plain languages
+           o Make sure that the system has good error recovery
+           o Ex. Error page when something isn't loading
+       9. Help and documentation 
+           o Always make sure that there is documentation available to help the user 
+           o Ex. Question mark icon near things to show what they do, Python documentation, etc...
+          
+IV. User Testing
+     - Improve designs and interfaces before showing to users
+     - Planning the user testing: subjects, the system, tasks, the session, measures taken
+     - User testing facilities/labs
+        o Ex. Observing users, tracking their eye movements, etc...
