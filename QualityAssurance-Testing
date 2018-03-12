@@ -1,4 +1,4 @@
-Testing 
+Quality Assurance and Testing 
 -------------------------
 I.   General Testing Concepts/Terminology
 II.  Goals of Testing 
@@ -6,6 +6,7 @@ III. Levels of Testing
 IV.  Best Way to Choose Test Cases
 V.   Black-box Testing
 VI.  White-box Testing
+VII. Quality Assurance 
 
 I. General Testing Concepts 
 - Purpose of testing: detect and correct errors in a software product
@@ -105,6 +106,29 @@ V. Black-box Testing
 VI. White-box Testing 
   o Aka structural testing 
   o Have access to the code 
+  
+  
+  
+VII. Quality Assurance
+- Quality assurance: all activities designed to measure and improve quality in a product
+- QA goals: verification and validation
+  o Verification - implement the idea properly
+  o Validation - implement the proper idea 
+- Ideal scenario: complete formal specification of problem to be solved, design in formal notation, code in verifiable language,
+  executable machine code, execution on verified hardware
+- Real world scenario: mixture of formal and informal specifications, design in mixed notation, code in C++/Java/Ada, (Intel
+  Pentium-based) machine code, execution on commercial hardware
+- Why is QA difficult?
+  o Complex data communications
+  o Distributed processing
+  o Stringent performance objectives
+  o Complex processing 
+  o QA lays out the rules, uncovers the faults, and is viewed as cumbersome/heavy (people just want to code/be left alone)
+- QA techniques:
+  o Formal methods
+  o Static analysis of program properties
+  o Reviews and inspections
+  o Testing 
   
   
   
