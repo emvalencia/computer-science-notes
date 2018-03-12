@@ -62,30 +62,30 @@ III. Heuristic Evaluation
        3. User control and freedom
            o Users often make mistakes and need to be able to get back to where they were
            o Ex. Allow user to move back to the page they were on before, refresh the page, go forward
-       3. Consistency and standards
+       4. Consistency and standards
            o Follow standard conventions when designing 
            o System has continuity across its platform
            o Ex. The call button on a phone looks like a phone, a magnifying glass icon usually means to search, an envelope
              icon usually refers to mail 
-       4. Error prevention
+       5. Error prevention
            o Best designs have great error recovery and prevent users from making errors in the first place
            o Systems must have efficient methods of error prevention 
            o Ex. Car system lights warn you about something that might go wrong/that you need to get your car checked out
-       5. Recognition rather than recall 
+       6. Recognition rather than recall 
            o Systems should minimize user's memory load by making things more visible and recognizable
            o Ex. When choosing a font, the font is usually displayed so that you don't have to remember what it looks like
-       6. Accelerators
+       7. Accelerators
            o Unseen to novice user but allows expert user to navigate more quickly/conveniently
            o Shortcuts 
            o Ex. Photoshop has icons on the left-hand side for novice users and has keyboard shortcuts for expert users
-       7. Minimalist design
+       8. Minimalist design
            o Consider contrast, repetition, alignment, and proximity 
            o System must be aesthetically pleasing and efficienty composed
-       8. Help Users recognize/recover from errors
+       9. Help Users recognize/recover from errors
            o Error messages should be expressed in plain languages
            o Make sure that the system has good error recovery
            o Ex. Error page when something isn't loading
-       9. Help and documentation 
+       10. Help and documentation 
            o Always make sure that there is documentation available to help the user 
            o Ex. Question mark icon near things to show what they do, Python documentation, etc...
           
