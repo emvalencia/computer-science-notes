@@ -1,14 +1,20 @@
 Quality Assurance and Testing 
 -------------------------
 I.   General Testing Concepts/Terminology
-II.  Goals of Testing 
+
+II.  Goals of Testing
+
 III. Levels of Testing
+
 IV.  Best Way to Choose Test Cases
+
 V.   Black-box Testing
+
 VI.  White-box Testing
+
 VII. Quality Assurance 
 
-I. General Testing Concepts 
+##I. General Testing Concepts 
 - Purpose of testing: detect and correct errors in a software product
 - Process: devise test case and expected output, run test case, capture actual output, compare actual output to expected output 
   o Will succeed for fail (report failure) 
@@ -17,7 +23,7 @@ I. General Testing Concepts
   o Fault or defect- mistake in code 
   o Failure- external behavior/execution/output incorrect 
 
-II. Goals
+##II. Goals
   o Find and fix failures/faults 
   o Find as many bugs as possible
   o Improve confidence that the system performs as specified (verification) and as desired (validation)
@@ -29,12 +35,12 @@ II. Goals
   o Can stop testing when the problem find rate stabilizes to near zero 
   o Aim to meet the quality requirements established for the project  
 
-III. Levels of testing 
+##III. Levels of testing 
   o Unit testing: testing of a single code unit 
   o Functional/integration testing: testing of interfaces among integrated units
   o System/acceptance testing: testing of complete system for satisfaction and requirements 
 
-IV. Best Way To Choose Test Cases 
+##IV. Best Way To Choose Test Cases 
   o Intuition 
   o Specification (black-box testing)- equivalence class partitioning, boundary-value analysis 
   o Code (white-box testing)- path analysis 
@@ -42,7 +48,7 @@ IV. Best Way To Choose Test Cases
   o Faults
 - Test oracles: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
 
-V. Black-box Testing 
+##V. Black-box Testing 
   o Aka specification-based testing- use specifications to derive test cases
   o Do not have access to the code, Only know what it's supposed to do
   o Choose test cases that guarantee a wide range of coverages (typical values, boundary values, special cases, invalid input values)
@@ -103,13 +109,13 @@ V. Black-box Testing
                86,87,99)                    x          86.0               86.0          #Passes
             
   
-VI. White-box Testing 
+##VI. White-box Testing 
   o Aka structural testing 
   o Have access to the code 
   
   
   
-VII. Quality Assurance
+##VII. Quality Assurance
 - Quality assurance: all activities designed to measure and improve quality in a product
 - QA goals: verification and validation
   o Verification - implement the idea properly
