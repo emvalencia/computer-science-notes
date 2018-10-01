@@ -14,54 +14,54 @@ VI.  White-box Testing
 
 VII. Quality Assurance 
 
-##I. General Testing Concepts 
+## I. General Testing Concepts 
 - Purpose of testing: detect and correct errors in a software product
-- Process: devise test case and expected output, run test case, capture actual output, compare actual output to expected output 
-  o Will succeed for fail (report failure) 
+- Process: devise test case and expected output, run test case, capture actual output, compare actual output to expected output
+    - Will succeed for fail (report failure) 
 - Terminology:
-  o Error- human mistake
-  o Fault or defect- mistake in code 
-  o Failure- external behavior/execution/output incorrect 
+    - **Error**- human mistake
+    - **Fault or defect**- mistake in code 
+    - **Failure**- external behavior/execution/output incorrect 
 
-##II. Goals
-  o Find and fix failures/faults 
-  o Find as many bugs as possible
-  o Improve confidence that the system performs as specified (verification) and as desired (validation)
-  o Make sure it's accurate, thorough, repeatable, and systematic 
-  o "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
-- How do we know when we are done testing?
-  o Finding bugs = fixes
-  o Not finding bugs = gives us nothing, you can never know/confirm that it is 100% bug-free 
-  o Can stop testing when the problem find rate stabilizes to near zero 
-  o Aim to meet the quality requirements established for the project  
+## II. Goals
+  > "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
+  - Find and fix failures/faults 
+  - Find as many bugs as possible
+  - Improve confidence that the system performs as specified (verification) and as desired (validation)
+  - Make sure it's accurate, thorough, repeatable, and systematic 
+  - How do we know when we are done testing?
+    - Finding bugs = fixes
+    - Not finding bugs = gives us nothing, you can never know/confirm that it is 100% bug-free 
+    - Can stop testing when the problem find rate stabilizes to near zero 
+    - Aim to meet the quality requirements established for the project  
 
-##III. Levels of testing 
-  o Unit testing: testing of a single code unit 
-  o Functional/integration testing: testing of interfaces among integrated units
-  o System/acceptance testing: testing of complete system for satisfaction and requirements 
+## III. Levels of testing 
+  - **Unit testing**: testing of a single code unit 
+  - Functional/integration testing: testing of interfaces among integrated units
+  - System/acceptance testing: testing of complete system for satisfaction and requirements 
 
-##IV. Best Way To Choose Test Cases 
-  o Intuition 
-  o Specification (black-box testing)- equivalence class partitioning, boundary-value analysis 
-  o Code (white-box testing)- path analysis 
-  o Existing test cases
-  o Faults
-- Test oracles: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
+## IV. Best Way To Choose Test Cases 
+  - Intuition 
+  - Specification (black-box testing)- equivalence class partitioning, boundary-value analysis 
+  - Code (white-box testing)- path analysis 
+  - Existing test cases
+  - Faults
+  - **Test oracles**: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
 
-##V. Black-box Testing 
-  o Aka specification-based testing- use specifications to derive test cases
-  o Do not have access to the code, Only know what it's supposed to do
-  o Choose test cases that guarantee a wide range of coverages (typical values, boundary values, special cases, invalid input values)
-  o Equivalence class partitioning:
+## V. Black-box Testing 
+  - Aka specification-based testing- use specifications to derive test cases
+  - Do not have access to the code, Only know what it's supposed to do
+  - Choose test cases that guarantee a wide range of coverages (typical values, boundary values, special cases, invalid input values)
+  - **Equivalence class partitioning**:
     - Divide input into several classes that are considered "equivalent" for the purpose of finding errors
       o If fails/passes for one member of the class, it is likely to fail/pass for all members
     - Classes are determined by: looking at requirements specification, tester's intuition 
     - Classes should cover the complete input domain, should never overlap 
-  o Bounary value analysis:
+  - **Bounary value analysis**:
     - Exp has shown that many errors are made at the "boundaries" rather than under normal conditions
       ex. Confusion between < and <=
     - Uses same classes as equivalence partitioning but tests at the boundaries rather just any element
-  o Systematic approach to equivalence class partitioning and boundary value analysis
+  - **Systematic approach to equivalence class partitioning and boundary value analysis**:
     1. Identify the set of all possible inputs, aka domain
     2. Identify a basis for subdividing the set of inputs
       ex. Size/magnitude, structure, correctness, your creative thinking 
@@ -98,43 +98,41 @@ VII. Quality Assurance
         o Title: the basis you are testing
         o Split into sections: test cases (input), subdomains, expected output, actual output
                               Length of List (for quizAverage example)
-          Test Case            Subdomains           Expected Output    Actual Output
-                         Empty One Small Large      
-          -------------------------------------------------------------------------------------
-              ()           x                           0.0                9.9999!       #ERROR
-              (87)               x                     87.0               crashes       #ERROR
-              (90,95,85)             x                 92.5               92.5          #Passes
-              (80,81,82,
-               83,84,85,
-               86,87,99)                    x          86.0               86.0          #Passes
+                              
+         | Test Case     |       Subdomains       |  Expected Output |   Actual Output              |
+         |---------------|:----------------------:|:----------------:|-----------------------------:|
+         |     ()        |  empty                    |       0.0        |        9.9999!       #ERROR  |
+         |     (87)      |         one              |       87.0       |        crashes       #ERROR  |
+         |     (90,95,85)|             small          |       92.5       |        92.5          #Passes |
+         |     (80,81,82, 83,84,85,86,87,99) |   large    |     86.0         |      86.0          #Passes   |
             
   
-##VI. White-box Testing 
-  o Aka structural testing 
-  o Have access to the code 
+## VI. White-box Testing 
+  - Aka structural testing 
+  - Have access to the code 
   
   
   
-##VII. Quality Assurance
+## VII. Quality Assurance
 - Quality assurance: all activities designed to measure and improve quality in a product
-- QA goals: verification and validation
-  o Verification - implement the idea properly
-  o Validation - implement the proper idea 
+- **QA goals**:
+  - Verification - implement the idea properly
+  - Validation - implement the proper idea 
 - Ideal scenario: complete formal specification of problem to be solved, design in formal notation, code in verifiable language,
   executable machine code, execution on verified hardware
 - Real world scenario: mixture of formal and informal specifications, design in mixed notation, code in C++/Java/Ada, (Intel
   Pentium-based) machine code, execution on commercial hardware
 - Why is QA difficult?
-  o Complex data communications
-  o Distributed processing
-  o Stringent performance objectives
-  o Complex processing 
-  o QA lays out the rules, uncovers the faults, and is viewed as cumbersome/heavy (people just want to code/be left alone)
+  - Complex data communications
+  - Distributed processing
+  - Stringent performance objectives
+  - Complex processing 
+  - QA lays out the rules, uncovers the faults, and is viewed as cumbersome/heavy (people just want to code/be left alone)
 - QA techniques:
-  o Formal methods
-  o Static analysis of program properties
-  o Reviews and inspections
-  o Testing 
+  - Formal methods
+  - Static analysis of program properties
+  - Reviews and inspections
+  - Testing 
   
   
   
