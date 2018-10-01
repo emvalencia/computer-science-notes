@@ -19,7 +19,7 @@ II. Supervised Learning
     - Alter plan/behavior to improve feedback
     - Feedback may be delayed
 - Which model is better? Must look at accuracy, complexity, and mistakes (are all mistakes equally bad?)
-- Python offers many libraries to work with machine learning: numpy, matplotlib -> good for data exploration
+- Python offers many libraries to work with machine learning: numpy, matplotlib, scipy -> good for data exploration (more info found here http://sli.ics.uci.edu/extras/cs178/Intro_Tutorial.html )
 ### Data Visualization
 - Data can be represented as variables/data points, vectors, and matrices
 - Histograms: count data in each of K bins; summarize the data as a length K vector of counts (& plot)
@@ -64,3 +64,5 @@ II. Supervised Learning
   - Less sensitive to exact individual data points and simplifies the function
 - Error rates
   - When k=1 there is no error (spit out the closest data point always), since data is memorized
+
+@copy. These notes were taken in UCIs CS178 course taught by Dr. Ihler.
