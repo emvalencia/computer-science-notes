@@ -27,6 +27,14 @@ VII. Quality Assurance
 - **Formal verification**- establish correctness of programs using formal methods of mathematics
 - **Static analysis**- examine code without executing the program
 - **Dynamic analysis**- execute the program with test cases ; use test oracles that know exactly what you're looking for
+- Software properties:
+    - External properties that can be verified: timlessness, interoperability
+    - Dependability properties: correctness, safety, reliability, robustness
+    - Process-oriented properties: maintainability, reusability, modularity
+    - External properties that can be validated: usability, elegance
+- Testing fundamentals:
+    - Validation
+    - Verification
 
 ## II. Goals
   > "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
