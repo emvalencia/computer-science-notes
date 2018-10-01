@@ -1,5 +1,5 @@
-Quality Assurance and Testing 
--------------------------
+# Software Quality Assurance and Testing 
+---
 I.   General Testing Concepts/Terminology
 
 II.  Goals of Testing
@@ -15,6 +15,8 @@ VI.  White-box Testing
 VII. Quality Assurance 
 
 ## I. General Testing Concepts 
+> "The Royal Road to Software Engineering Capability: You need to build, test, and debug real software." 
+- Since software is everywhere, the cost of software is increasing
 - Purpose of testing: detect and correct errors in a software product
 - Process: devise test case and expected output, run test case, capture actual output, compare actual output to expected output
     - Will succeed for fail (report failure) 
@@ -22,6 +24,9 @@ VII. Quality Assurance
     - **Error**- human mistake
     - **Fault or defect**- mistake in code 
     - **Failure**- external behavior/execution/output incorrect 
+- **Formal verification**- establish correctness of programs using formal methods of mathematics
+- **Static analysis**- examine code without executing the program
+- **Dynamic analysis**- execute the program with test cases ; use test oracles that know exactly what you're looking for
 
 ## II. Goals
   > "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
@@ -35,7 +40,7 @@ VII. Quality Assurance
     - Can stop testing when the problem find rate stabilizes to near zero 
     - Aim to meet the quality requirements established for the project  
 
-## III. Levels of testing 
+## III. Levels of Testing 
   - **Unit testing**: testing of a single code unit 
   - Functional/integration testing: testing of interfaces among integrated units
   - System/acceptance testing: testing of complete system for satisfaction and requirements 
@@ -136,4 +141,4 @@ VII. Quality Assurance
   
   
   
-@copy: Most notes are property of Professor Ziv and Navarro at UCI
+@copy: Note are from courses from Professor Ziv, Professor Navarro, and I. Ahmed
