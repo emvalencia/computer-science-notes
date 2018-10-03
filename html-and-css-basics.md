@@ -22,6 +22,7 @@ II. CSS
   ```
  
  - IDs must be unique
+ - General rule: don't put block inside of inline elements
  
 
 ### Supporting Multiple Languages in HTML
@@ -55,8 +56,14 @@ II. CSS
     ```
  - CSS Properties
   - font-family, font-size, font-weight, color, background-color, opacity (transparency), and a lot more!
- - Can do inline CSS but it's generally considered bad practice because it can be repetitive
-  
+ - There are multiple ways to style a webpage:
+  - Incline CSS - repetitive and considered bad practice
+  - Internal - not prefered for similar reasons as above
+  - External - preferred, best practice to separate it from .html file
+ - Box Model 
+  - Padding extends the content area
+  - Border is similar
+  - Margin is outside of the border and is intended to separate different elements from their neighbors
 
 
 
