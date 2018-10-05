@@ -16,7 +16,7 @@ VII. Quality Assurance
 
 ## I. Background and General Testing Concepts
 ### Background
-- Since software is everywhere, the cost of software is increasing
+- Since software is everywhere, the cost of software is increasing -> testing software to ensure good quality is important
 - Software engineering is the youngest engineering discipline, but similar to the others in some ways:
     - Design is difficult but important
     - Implementation is difficult and important
