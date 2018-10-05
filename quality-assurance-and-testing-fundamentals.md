@@ -1,19 +1,5 @@
 # Software Quality Assurance and Testing 
 ---
-I. Background and General Testing Concepts/Terminology
-
-II. Goals of Testing
-
-III. Kinds of Testing
-
-IV. Best Way to Choose Test Cases
-
-V. Black-box Testing
-
-VI. White-box Testing
-
-VII. Quality Assurance 
-
 ## I. Background and General Testing Concepts
 ### Background
 - Since software is everywhere, the cost of software is increasing -> testing software to ensure good quality is important
