@@ -94,7 +94,7 @@ VII. Quality Assurance
 ## III. Kinds of Testing 
   - **Manual testing**: human sits at a program and manually enters inputs to test it
   - **Automated testing**: humans write programs that produce tests or use scripts/other methods to make the computer execute tests
-  - When to use manual vs. automated: depends, a good tester will know which one to us
+    - When to use manual vs. automated: depends, a good tester will know which one to use
   - **Scripted testing**: a tester follows a fixed script
   - **Exploratory testing**: tester has general guidelines but is free to explore
   - **Unit testing**: testing of a single code unit 
