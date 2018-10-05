@@ -1,5 +1,6 @@
 # Software Quality Assurance and Testing 
 ---
+
 ## I. Background and General Testing Concepts
 ### Background
 - Since software is everywhere, the cost of software is increasing -> testing software to ensure good quality is important
