@@ -98,8 +98,8 @@ VII. Quality Assurance
   - **Scripted testing**: a tester follows a fixed script
   - **Exploratory testing**: tester has general guidelines but is free to explore
   - **Unit testing**: testing of a single code unit 
-  - Functional/integration testing: testing of interfaces among integrated units
-  - System/acceptance testing: testing of complete system for satisfaction and requirements 
+  - **Functional/integration testing**: testing of interfaces among integrated units
+  - **System/acceptance testing**: testing of complete system for satisfaction and requirements 
 
 ## IV. Best Way To Choose Test Cases 
   - Intuition 
