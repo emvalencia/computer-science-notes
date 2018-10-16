@@ -95,33 +95,52 @@
 - JavaScipt is not Java! Debugging depends on the execution environment, prototype based, used in every browser without a plugin
 
 ### Language Basics
-- JS has functions and objects
-- Variables are dynamically-typed
-- Arithmetic: 
- 
-  `console.log("Hello, World!") //print to a separate console, not your webpage; can right-click your webpage and click "inspect"
-   console.log('40' + 2); //will print '402'
-   console.log('40' - 4); // will print 36
-   var x = 'hello'; //value is string
-   console.log("Hello, World!") //print to a separate console, not your webpage; can right-click your webpage and click "inspect"
-   `
- - String are immutable in JS
- - Can call methods like in other languages using dot after the object name: `className = className.toUpperCase();`
- - JS arrays: 
-    - Dynamically-typed so you don't need to specify it up front
-    - Mutable 
-    - Similar to Java
+- Conventions: 
+  - camelCase
+  
+- Variables: 
+  - Cannot be a keyword
+  - Use descriptive names
+  - Cannot start with a number
+  - Cannot contain a hyphen (-)
+  - Default value of variables is undefined
+  - Strings are immutable
+
+- Types: 
+  - **Primitive**: string, number, boolean, undefined, null
+  - **Reference**: object, array, function
+  - Types have functions automatically made/associated with them
+      - Type number: length(), etc...
+      - Type string: toUpperCase(), substring(), etc...
+
+- Objects:
+  - Aka object literals
+  - Declared similarly to variables but with JSON-like declarations
+  - Similar to python dictionaries/java hashmaps
+  - Can call methods like in other languages using dot after the object name: `className = className.toUpperCase();`
+
+- Arrays:
+  - Array lengths are dynamically typed and mutable
+  - Objects inside of an array are dynamic, don't need to be the same type
+  - typeof(array) = object
+  - Has properties already when it's made (length, etc...)
+  - Assigning out of bounds automatically grows the array, everything in empty
+      spots will be "undefined"
       `
         var numbers = [1,2,3];
         var things = ['rain', 2.5, true, [5,9,8]]; //arrays can be nested
         var blankStr = new Array(5); //empty array with 5 items
-       `  
-  - Accessing properties
-    - Similar to other languages using dot feature `var name = person.firstName; //get value of firstName`
-  - Functions
-    - Similar to Java static methods 
-    - Functions are objects in JS
-    `
+      `
+
+- Functions:
+  - Similar to java functions
+  - If no param is passed in, the value is undefined
+  - Are objects and can be assigned to variables
+  - Since they are objects they can be passed like variables
+  - Callback functions are passed to another function for it to call back and execute
+      - Ex. array.forEach, array.map, array.filter, array.reduce
+      
+     `
       //note that there isn't an access modifier
       function sayHello(name) {
         return "Hello, " + name;
@@ -129,7 +148,32 @@
       //if you pass in nothing sayHello() output is "Hello, undefined"
       //if you pass in sayHello("inf133", "joe") output is "Hello, inf133"
      `
-      
+
+- Anonymous functions:
+  - Have abbreviated syntax, ex. 
+
+  `
+    var sayHello = (person) => {
+        console.log("Hello, " + person);
+    }
+  `
+
+- Type conversion:
+  - Addition (+) is defined for strings as append, so it will append to a string
+  - Subtraction is not, so it will substract from the number
+  - == : compares if the two values are equal with type conversion 
+  - === : compares if the two values are equal with no type conversion (must be same
+      type to be equal)
+
+- Arithmetic: 
+ 
+  `console.log("Hello, World!") //print to a separate console, not your webpage; can right-click your webpage and click "inspect"
+   console.log('40' + 2); //will print '402'
+   console.log('40' - 4); // will print 36
+   var x = 'hello'; //value is string
+   console.log("Hello, World!") //print to a separate console, not your webpage; can right-click your webpage and click "inspect"
+  `
+     
   
   
   
