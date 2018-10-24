@@ -181,7 +181,31 @@
   - Reviews and inspections
   - Testing 
   
- ## Finite State Machines
+ ## Structures for Modeling Software
+ ### Graphs
+ - Graphs are the most commonly used structure for testing
+ - Goal: cover the graph in some way 
+ - Types of graphs: 
+    - Control flow
+    - Design structure
+    - FSMs and statecharts
+    - Use cases
+ - Key definitions: (note that all node sets cannot be empty)
+    - **N** - set of nodes
+    - **N<sub>0</sub>** - set of initial nodes
+    - **N<sub>f</sub>** - set of final nodes
+    - **E** - set of edges that connect nodes
+    - **Path** - sequence of nodes [N<sub>0</sub>, N<sub>1</sub>, ... N<sub>n</sub>]
+    - **Subpath** - a subsequence of nodes in p, is a subpath of p
+    - **Length** - number of edges in a graph (a single node has length 0)
+    - **Reach(N)** - subgraph that can be reacehd from N
+    
+    
+ 
+ #### Control Flow Graphs
+ 
+    
+ #### Finite State Machines
  - **FSMs** - graphs in which nodes represent state and edges represent transition among states
     - It consists of an initial state, current state, and final state 
  - Can keep track of states and inputs with a state transition table, which shows the current state, inputs, and outputs 
@@ -190,6 +214,12 @@
     the states beforehand, predictable nature may not be preferred
  - Game example:
     Monsters in a game have certain states (spawn, idle, die, and attack). 
+    
+ ### Logic
+ ### Input Space
+ ### Syntax
+ 
+
 
  
  
