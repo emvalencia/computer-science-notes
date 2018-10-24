@@ -1,7 +1,7 @@
 # Software Quality Assurance and Testing 
 ---
 
-## I. Background and General Testing Concepts
+## Background and General Testing Concepts
 ### Background
 - Since software is everywhere, the cost of software is increasing -> testing software to ensure good quality is important
 - Software engineering is the youngest engineering discipline, but similar to the others in some ways:
@@ -57,7 +57,7 @@
 - **Test case**: one execution of the program which may expose a bug
 - **Test suite**: set of executions of a program; made of test cases
 
-## II. Goals
+## Goals
   > "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
   - Find and fix failures/faults/bugs as possible 
       - Ideally, we want to prove that code is correct using formal mathematical techniques
@@ -78,7 +78,7 @@
   - You can never be 100% certain that a program is bug-free because there is no possible way to test all possible program exections...
   - The biggest challenge for a tester is to construct effective test samples that reveal faults, performance bottlenecks, and demonstrate reliability, usability, etc...
 
-## III. Kinds of Testing 
+## Kinds of Testing 
   - **Manual testing**: human sits at a program and manually enters inputs to test it
   - **Automated testing**: humans write programs that produce tests or use scripts/other methods to make the computer execute tests
     - When to use manual vs. automated: depends, a good tester will know which one to use
@@ -88,7 +88,7 @@
   - **Functional/integration testing**: testing of interfaces among integrated units
   - **System/acceptance testing**: testing of complete system for satisfaction and requirements 
 
-## IV. Best Way To Choose Test Cases 
+## Best Way To Choose Test Cases 
   - Intuition 
   - Specification (black-box testing)- equivalence class partitioning, boundary-value analysis 
   - Code (white-box testing)- path analysis 
@@ -96,7 +96,7 @@
   - Faults
   - **Test oracles**: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
 
-## V. Black-box Testing 
+## Black-box Testing 
   - Aka specification-based testing- use specifications to derive test cases
   - Do not have access to the code, Only know what it's supposed to do
   - Choose test cases that guarantee a wide range of coverages (typical values, boundary values, special cases, invalid input values)
@@ -150,18 +150,17 @@
          | Test Case     |       Subdomains       |  Expected Output |   Actual Output              |
          |---------------|:----------------------:|:----------------:|-----------------------------:|
          |     ()        |  empty                    |       0.0        |        9.9999!       #ERROR  |
-         |     (87)      |         one              |       87.0       |        crashes       #ERROR  |
+         |     (87)      |         one               |       87.0       |        crashes       #ERROR  |
          |     (90,95,85)|             small          |       92.5       |        92.5          #Passes |
          |     (80,81,82, 83,84,85,86,87,99) |   large    |     86.0         |      86.0          #Passes   |
             
   
-## VI. White-box Testing 
+## White-box Testing 
   - Aka structural testing 
   - Have access to the code 
   
-  
-  
-## VII. Quality Assurance
+ 
+## Quality Assurance
 - Quality assurance: all activities designed to measure and improve quality in a product
 - **QA goals**:
   - Verification - implement the idea properly
@@ -182,6 +181,18 @@
   - Reviews and inspections
   - Testing 
   
+ ## Finite State Machines
+ - **FSMs** - graphs in which nodes represent state and edges represent transition among states
+    - It consists of an initial state, current state, and final state 
+ - Can keep track of states and inputs with a state transition table, which shows the current state, inputs, and outputs 
+ - FSM advantages: simple, predictable, and quick to design, implement, and execute
+ - FSM disadvantages: edge cases can be difficult to test, doesn't give good coverage in general because you have to know
+    the states beforehand, predictable nature may not be preferred
+ - Game example:
+    Monsters in a game have certain states (spawn, idle, die, and attack). 
+
+ 
+ 
   
   
 @copyright. Notes are from UCI lectures and slides from courses taught by Professor Ziv, Professor Navarro, and Professor Ahmed.
