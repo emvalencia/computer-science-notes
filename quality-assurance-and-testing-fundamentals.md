@@ -56,6 +56,15 @@
     - Testing is a form of consistency between implementation and specification
 - **Test case**: one execution of the program which may expose a bug
 - **Test suite**: set of executions of a program; made of test cases
+- **Test automation**: use software to control the execution of tests, comparison of actual outcomes to predicted outcomes, the setting up of test preconditions, and other test control and test reporting functions
+    - Reduces cost
+    - Reduces human error
+    - Reduces variance in test quality from different individuals
+    - Significantly reduces the cost of regression testing
+- **Software testability**: the degree to which a system or component facilitates the establishment of test criteria and the performance of tests to determine if the criteria was met -> how hard it is to find faults 
+    - Two problems: how to provide test values to the software and how to observe the results of test execution
+- **Observability**: how easy it is to observe the behavior of a program 
+- **Controllability**: how easy it is to provide a program with inputs
 
 ## Goals
   > "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
@@ -95,6 +104,13 @@
   - Existing test cases
   - Faults
   - **Test oracles**: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
+
+## Scripted and Exploratory Testing
+- Scripted testing: the user follows a set script when testing the program
+    - More robust testing with limited expense
+- Exploratory testing: Unscripted, unautomated, and unrepeatable testing
+    - Allows the user to explore the program freely and look for errors
+    - Can reveal test cases and specifications that can be automated
 
 ## Black-box Testing 
   - Aka specification-based testing- use specifications to derive test cases
@@ -156,8 +172,14 @@
             
   
 ## White-box Testing 
-  - Aka structural testing 
-  - Have access to the code 
+- Aka structural or glass box testing
+- Have access to the source code -> has well-defined coverage criterion
+
+### Coverage Criteria
+- **Statement Coverage**: test every statement of code, aka line coverage
+- **Branch Coverage**: test every statement, and every branch on multi-branch statements
+- **N-length Sub-path Coverage**: test every sub-path of length N
+- **Path Coverage**: test every path through the program from entry to exist
   
  
 ## Quality Assurance
