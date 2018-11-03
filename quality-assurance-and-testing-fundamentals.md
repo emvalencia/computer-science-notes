@@ -228,7 +228,7 @@ Example of TDD using a class called Calculate and its method add, which adds two
         }
     }
   
-### TDD Features
+### TDD Aspects
 **Unit tests** and **refactoring** play an important role in TDD. Unit tests allow us to test specific aspects of a functionality. They can execute rapidly, are independent of one another, their surrounding environment, and execution order, and they can be automated.
 
 In TDD, a **fixture** is a set of objects that we have instantiated for testing purposes and consists of initializations (prefix values) and reset values (postfix values). **Test doubles** are objects that look like the real objects you will use in production but execute faster and are easier to develop and maintain. They are typically used in state and interaction-based testing. The types of test doubles are: stubs, fakes, and mocks. **Stubs** are the simplest possible implementation of an interface. **Fakes** are an alternative simple implementation that are more sophisticated than a stub. **Mocks** are more sophisticated than a fake and can contain assertions, fake implementation of logic, and the ability to return hard-coded values. 
@@ -284,7 +284,6 @@ The most important unit test patterns are assertion patterns: assertTrue, assert
  
  #### Control Flow Graphs
  
-    
  #### Finite State Machines
  - **FSMs** - graphs in which nodes represent state and edges represent transition among states
     - It consists of an initial state, current state, and final state 
@@ -294,15 +293,10 @@ The most important unit test patterns are assertion patterns: assertTrue, assert
     the states beforehand, predictable nature may not be preferred
  - Game example:
     Monsters in a game have certain states (spawn, idle, die, and attack). 
-    
- ### Logic
- ### Input Space
- ### Syntax
- 
 
 
  
  
   
   
-@copyright. Notes are from UCI lectures and slides from courses taught by Professor Ziv, Professor Navarro, and Professor Ahmed.
+@Copyright. Notes are from UCI lectures and slides from courses taught by Professor Ziv, Professor Navarro, and Professor Ahmed.
