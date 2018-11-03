@@ -182,6 +182,64 @@
 - **Path Coverage**: test every path through the program from entry to exist
   
  
+## Test Driven Development (TDD)
+Test Driven Development, aka TDD, is a development process where code is written after writing and passing tests. The general flow for TDD is: write a test case for a component, eg. method, you want to later implement, compile it and fix compile errors -> run the test and see if it fails -> implement a very simple version of it that passes the test case -> adjust the implemented code as needed (refactor it). 
+
+TDD requires a programmer to think differently, as you're focused on coming up with test cases for a program that doesn't yet exist. This allows you to think outside the box without being influenced by the implemented code. TDD has other benefits as well. Since the program you create must pass tests before implementation, the program always works as expected and the end result is more reliable. Decisions regarding the program are always made when needed, as opposed to too early, and are more likely to be correct. This implementation also allows future modifications to be cheaper, easier, and less frequent. 
+
+Example of TDD using a class called Calculate and its method add, which adds two given integers
+
+    //Step 1: make a test case 
+    import org.junit.Test;
+    import static org.junit.Assert*;
+    
+    public class CalculateTest 
+    {
+        @Test public void testAdd()
+        {
+            assertTrue(10 == calculate.add(5,5);
+        }
+    }
+    
+    //Step 2: write the minimal code that passes the test case
+    public class Calculate
+    {
+        static public int add (int a, int b) 
+        {
+            return 10; //we know this is guaranteed to pass
+        }
+    }
+    
+    //Step 3: ensure that the code fails if a different test case is made
+    public class CalculateTest 
+    {
+        @Test public void testAdd()
+        {
+            assertTrue(7 = calculate.add(1,5)); //test will fail
+        }
+    }
+    
+    //Step 4: alter the code to fix the test case
+    public class Calculate
+    {
+        static public int add (int a, int b) 
+        {
+            return a + b; //works!
+        }
+    }
+  
+### TDD Features
+**Unit tests* and **refactoring** play an important role in TDD. Unit tests allow us to test specific aspects of a functionality. They can execute rapidly, are independent of one another, their surrounding environment, and execution order, and they can be automated.
+
+In TDD, a **fixture** is a set of objects that we have instantiated for testing purposes and consists of initializations (prefix values) and reset values (postfix values). **Test doubles** are objects that look like the real objects you will use in production but execute faster and are easier to develop and maintain. They are typically used in state and interaction-based testing. The types of test doubles are: stubs, fakes, and mocks. **Stubs** are the simplest possible implementation of an interface. **Fakes** are an alternative simple implementation that are more sophisticated than a stub. **Mocks** are more sophisticated than a fake and can contain assertions, fake implementation of logic, and the ability to return hard-coded values. 
+
+### Assertions
+The most important unit test patterns are assertion patterns: assertTrue, assertFalse, assertEquals, etc... There are many types of assertions: resulting state, guard, delta, custom, and interaction. A **resulting state assertion** checks that the resulting state is as expected, ex. `assertEquals( desiredState, testState)`. A **guard assertion** is used to check for some condition that exists before continuing to the rest of our test code, ex. `assertNotSame(java.lang.Object expected, java.lang.Object actual).`. A **delta assertion** is an asserton that expects a change, ex. start with a value that will be altered in the code, alter it in the test, and ensure that it works by comparing that value from the code and test. A **custom assertion** is an assertion of your own creation, which means that it encompasses a wide range of test situations, ex. `custom_assertInRange(in_value, message)... assertTrue(message, (in_value < max) && (in_value > min))`. An **iteraction assertion** checks if our code works with other code. 
+
+### Legacy Code
+**Legacy code** is an established, existing codebase. TDD's general approach isn't useful for this type of code because most of the development will be altering/fixing this older codebase. Another method: identify change point -> identify inflection point -> cover the identified inflection point -> make changes -> refactor covered code. 
+
+ 
 ## Quality Assurance
 - Quality assurance: all activities designed to measure and improve quality in a product
 - **QA goals**:
