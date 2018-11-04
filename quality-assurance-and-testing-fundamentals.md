@@ -31,18 +31,11 @@
 
 ### General Testing Concepts
 > "The Royal Road to Software Engineering Capability: You need to build, test, and debug real software." 
-- **Testing**- running a program in order to find faults
-- Purpose of testing: detect and correct errors in a software product; increase our confidence in a program (high quality, low risk)
-- Process: devise test case and expected output, run test case, capture actual output, compare actual output to expected output
-    - Will succeed for fail (report failure) 
-- Terminology:
-    - **Fault or defect**- mistake in code, a static flaw in a program, a bug
-        - To expose a fault with a test:
-            - *Reachability*: test must reach and execute location of the fault
-            - *Infection*: fault corrupts program state -> error
-            - *Propogation*: error must persist and cause an incorrect output -> failure
-    - **Error**- human mistake, bad program state that results from a fault (not all faults produce an error)
-    - **Failure**- external behavior/execution/output incorrect (not every error causes a program failure)
+
+**Testing** is an essential part of software development that involves running a program in order to expose faults. The purpose of testing is to detect and correct errors in a software product to increase our confidence in a program. The process of testing involves creating test cases with expected outputs, running the test cases, capturing the actual output, and comparing that actual output to the expected output. Tests will either succeed or fail. In testing, a **fault** is a static flaw in a program or a bug. An **error** is a bag program state that results from a fault. A **failure** is an observable incorrect behavior of a program that results from an error. Note that not all faults result in errors and not all errors result in failures. 
+
+To expose a fault with a test you need: reachability, infection, and propogation. **Reachability** refers to the ability of a test to reach and execute the location of the fault. An **infection** is when the fault corrupts the program state, causing an error. In order to cause a failure, the error must persist and cause an incorrect output, which is called **propogation**. 
+
 - **Formal verification**- establish correctness of programs using formal methods of mathematics
 - **Static analysis**- examine code without executing the program
     - Pure static analysis isn't "software testing" because you aren't actually running the program to see if there are errors
@@ -54,19 +47,23 @@
     - Testing checks if the program matches the specifications
     - Specifications outline what the program should do
     - Testing is a form of consistency between implementation and specification
-- **Test case**: one execution of the program which may expose a bug
-- **Test suite**: set of executions of a program; made of test cases
-- **Test automation**: use software to control the execution of tests, comparison of actual outcomes to predicted outcomes, the setting up of test preconditions, and other test control and test reporting functions
-    - Reduces cost
-    - Reduces human error
-    - Reduces variance in test quality from different individuals
-    - Significantly reduces the cost of regression testing
-- **Software testability**: the degree to which a system or component facilitates the establishment of test criteria and the performance of tests to determine if the criteria was met -> how hard it is to find faults 
-    - Two problems: how to provide test values to the software and how to observe the results of test execution
-- **Observability**: how easy it is to observe the behavior of a program 
-- **Controllability**: how easy it is to provide a program with inputs
+    
+    
+### Test Cases 
+A **test case** is a single execution of a program which may expose a bug. A **test suite** is a set of executions of a program, a set of test cases. **Test automation** refers to the ability of software to control the execution of tests, comparison of actual outcomes to predicted outcomes, the setting up of test preconditions, and other test control and test reporting functions. Automation of tests reduces costs, human error, variance in test quality that arises from different individuals, and the cost on regression testing. 
 
-## Goals
+### Best Way To Choose Test Cases 
+  - Intuition 
+  - Specification (black-box testing)- equivalence class partitioning, boundary-value analysis 
+  - Code (white-box testing)- path analysis 
+  - Existing test cases
+  - Faults
+  - **Test oracles**: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
+
+### Qualities of Software
+**Software testability** is the degree to which a system or component facilitates the establishment of test criteria and the performance of tests to determine if the criteria was met, or how hard it is to find faults. **Observability** is how easy it is to observe the behavior of a program. **Controllability** is how easy it is to provide a program with inputs. 
+
+## Goals of Testing
   > "Problem testing can be used to show the presence of bugs, but never to show their absence." - Dijkstra
   - Find and fix failures/faults/bugs as possible 
       - Ideally, we want to prove that code is correct using formal mathematical techniques
@@ -96,14 +93,6 @@
   - **Unit testing**: testing of a single code unit 
   - **Functional/integration testing**: testing of interfaces among integrated units
   - **System/acceptance testing**: testing of complete system for satisfaction and requirements 
-
-## Best Way To Choose Test Cases 
-  - Intuition 
-  - Specification (black-box testing)- equivalence class partitioning, boundary-value analysis 
-  - Code (white-box testing)- path analysis 
-  - Existing test cases
-  - Faults
-  - **Test oracles**: mechanism for deciding if a test mechanism succeeds or fails, difficult to automate
 
 ## Scripted and Exploratory Testing
 - Scripted testing: the user follows a set script when testing the program
@@ -172,7 +161,10 @@
             
   
 ## White-box Testing 
-- Aka structural or glass box testing
+White-box testing, or structural testing, is testing with access to the source code. 
+
+There are multiple types of structural testing: statement, branch, N-length sub-path, and path coverage. 
+
 - Have access to the source code -> has well-defined coverage criterion
 
 ### Coverage Criteria
