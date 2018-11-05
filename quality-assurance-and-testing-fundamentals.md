@@ -48,7 +48,9 @@ To expose a fault with a test you need: reachability, infection, and propogation
     - Specifications outline what the program should do
     - Testing is a form of consistency between implementation and specification
     
-    
+### Stages of Testing
+The three stages of testing are: unit testing, integration testing, and system testing. **Unit testing** is the 1st phase and is done by developers. It involves testing individual components of a program. **Integration testing** is the 2nd phase and consists of testing the interactions between units and interfaces between classes. Integration can be done at the method, class, and package level, or at higher levels of abstraction. **System testing** tests the whole program to make sure it meets requirements.
+
 ### Test Cases 
 A **test case** is a single execution of a program which may expose a bug. A **test suite** is a set of executions of a program, a set of test cases. **Test automation** refers to the ability of software to control the execution of tests, comparison of actual outcomes to predicted outcomes, the setting up of test preconditions, and other test control and test reporting functions. Automation of tests reduces costs, human error, variance in test quality that arises from different individuals, and the cost on regression testing. 
 
@@ -101,7 +103,7 @@ A **test case** is a single execution of a program which may expose a bug. A **t
     - Allows the user to explore the program freely and look for errors
     - Can reveal test cases and specifications that can be automated
 
-## Black-box Testing 
+## Functional Testing (Black-box Testing)
   - Aka specification-based testing- use specifications to derive test cases
   - Do not have access to the code, Only know what it's supposed to do
   - Choose test cases that guarantee a wide range of coverages (typical values, boundary values, special cases, invalid input values)
@@ -159,7 +161,22 @@ A **test case** is a single execution of a program which may expose a bug. A **t
          |     (90,95,85)|             small          |       92.5       |        92.5          #Passes |
          |     (80,81,82, 83,84,85,86,87,99) |   large    |     86.0         |      86.0          #Passes   |
             
-  
+### Smoke Testing
+Smoke testing is a type of functional testing that ensures that the program is functioning correctly, even before looking at the code. Does the program compile? Does it run? Smoke testing can also consists of unit tests, integration tests, system tests, and build verification testing. 
+
+### User Acceptance Testing 
+User acceptance testing is a form of testing that bridges the gap between verification and validation. It's intended to be performed by people, generally people who didn't write the code such as the final customer, a contractor, or another development team. This type of testing checks to see if the requirements for the program are met. The goals of acceptance testing are to verify man-machine interactions, validate the required functionality of the system, verify that the system operates with the specified constraints, and to check the system's external interfaces. 
+
+#### Alpha and Beta Testing
+Alpha-beta testing is a form of acceptance testing that tests at the Alpha and Beta stages of development.
+
+### Regression Testing
+Regression testing is a type of functional testing that looks for areas of regression in code. Changes to code may break it and reintroduce old bugs, aka the software regresses. These tests must be automated in order to save time and cost. There are many types of tools used in regression testing, like capture/replay for GUIs, version control, and scripting software. The majority of testing time is spent on regression testing, as opposed to testing new software.
+
+
+## Software Scaffolding
+Software scaffolding consists of extra software components that are created to support integration and testing. 
+
 ## White-box Testing 
 White-box testing, or structural testing, is testing with access to the source code. 
 
@@ -171,8 +188,7 @@ There are multiple types of structural testing: statement, branch, N-length sub-
 - **Statement Coverage**: test every statement of code, aka line coverage
 - **Branch Coverage**: test every statement, and every branch on multi-branch statements
 - **N-length Sub-path Coverage**: test every sub-path of length N
-- **Path Coverage**: test every path through the program from entry to exist
-  
+- **Path Coverage**: test every path through the program from entry to exist  
  
 ## Test Driven Development (TDD)
 Test Driven Development, aka TDD, is a development process where code is written after writing and passing tests. The general flow for TDD is: write a test case for a component, eg. method, you want to later implement, compile it and fix compile errors -> run the test and see if it fails -> implement a very simple version of it that passes the test case -> adjust the implemented code as needed (refactor it). 
