@@ -1,0 +1,82 @@
+I.  Introduction to DBMS
+II. Data Models 
+
+I. Introduction to DBMS 
+- Database: large, integrated collection of data
+  o Usually a model of a real-world enterprise (models what's going on in the real world)
+  o Consists of entities and relationships:
+    - Entities: student, courses, users, etc... (have attributes, ex. birthday, ID number)
+    - Relationships: between entities (ex. student is taking a course)
+  o DMBS (database management system): software that understands entities and relationships, assists in maintaining and utilizing large
+    collections of data
+- File systems vs. databases:
+  o Application programs must sometimes stage large datasets between main memory and secondary storage
+    - Ex. Buffering huge data sets, getting page-oriented access
+  o Special code needed for different queries, code must stay correct and efficient
+  o Protect data from inconsistency
+  o Crash recovery is important b/c data is important
+  o Security and access control of data are also very important
+  o Drawbacks of file systems: 
+    - Do not have the memory to hold the data
+    - Cannot access a lot of data at a time
+    - Must write special, complex programs to manage data
+    - Must protect data from inconsistent data by users accessing it concurrently
+    - Must ensure data restoration
+    - Insufficient security 
+- Evolution of DBMS
+  o Files -> Codasyl/IMS -> Relational
+- Why use it? 
+  o Database independence
+  o Efficient data access
+  o Reduced app development time
+  o Data integrity and security
+  o Uniform data administration
+  o Concurrent access and recovery from crashes
+- Why study them?
+  o Shift from computation to information
+  o "Low end" to "high end"
+  o Datasets are increasing in diversity and volume
+  o DBMS field compasses most of CS
+  o Big data
+  
+II. Data Models
+- Data models: collection of concepts for describing data; collection of high-level description constructs that hide many low-level
+  storage details
+- Semantic data model: abstract, high-level data model that makes it easier for a user to come up with a good initial description of 
+  the data in an enterprise 
+- Schema: description of a particular collection of data, using a data model, list of columns and their types
+- Relational model: consists of relations (tables with rows/columns) and schemas (describes tables/columns); relation is the central 
+  data description construct, can think of it as a set of records
+- Integrity constraints: conditions that the records in a relationship must satisfy 
+- Schema:
+  o Conceptual- logical structure of the database, describes data in terms of the DBMS/data model
+      Students (sid:string, name:string, login:string, age:integer, gpa: real)
+  o Physical - describes the files and indexes used, stored as unordered files, summarizes how the relations in conceptual schema are
+    actually stored in secondary storage
+  o External - aka view, allows data access to be customized, limited data viewed/relevant data to target audience
+      CourseInfo (cid:string, cname:string, enrollment:integer) 
+- Data independence: applications are insulated from how data is actually structured and stored, thanks to schemas/high-level queries
+  o Logical data independence - protection from changes in logical structure of data, users can be shielded from changes in the logical
+    structure of data (ex. faculty_private(...) and faculty_public(...))
+  o Physical data independence - protection from changes in the physical structure of data, conceptual schema insulates users from 
+    physical storage details
+  o Very important, benefit of DMBS (allows changes without rewriting the application)
+- Sample query:
+    SELECT c.cid, c.enrollment
+    FROM CourseInfo c
+    WHERE c.name = 'Computer Game Design'
+- Concurrency and recovery
+  o Concurrent execution of user programs is essential for DBMS performance 
+  o Executions can cause crashes/errors, may occur and need to handle
+- Components' roles
+  o Query parser - parse and analyze SQL query, makes sure the query is valid
+  o Query optimizer - rewrites the query logically and performs cost-based optimization
+    *Optimization is important, cost differences can be orders of magnitude
+  o Plan executor + relational operators: runtime side of query processing
+  o Files of records
+  o Buffer manager: brings pages in from disc to memory (main) as needed in response to read requests
+  o Disc space and I/O managers
+  o System catalog: table info, data statistics, views, security, etc...
+  o Transation management: several people looking at the same thing, transactions must be complete, execution of user program in a DBMS
+- Some terms: DDL (used to define external/conceptual schema), DML (operates on data), QL (query language, lets you ask questions about
+  the data
